@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVACHANDRA.K | Cybersecurity Analyst & Web Application Security</title>
+  <meta name="description" content="Professional portfolio of NAVACHANDRA.K, a Cybersecurity Analyst and Web Application Security specialist. Explore skills, practical labs, and security projects.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Canvas Backdrop for Interactive Grid/Nodes -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <i class="fa-solid fa-shield-halved logo-icon"></i>
+        <span>NAVACHANDRA</span><span class="dot">.K</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active" id="link-hero">Home</a></li>
+        <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" id="link-experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="navachandra-resume%202026.pdf" download class="nav-cta" id="nav-resume-btn">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="container hero-wrapper">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="pulse-dot"></span>
+          <span>Security Specialist</span>
+        </div>
+        <h1>Hi, I'm <br><span class="gradient-text glow-text">NAVACHANDRA.K</span></h1>
+        <div class="hero-subtitle">
+          <span>I specialize in</span>
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Final-year CSE student and Cybersecurity Analyst specializing in web application security, vulnerability assessment, and risk mitigation.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary" id="hero-btn-contact">
+            <i class="fa-solid fa-paper-plane"></i> Get in Touch
+          </a>
+          <a href="navachandra-resume%202026.pdf" download class="btn btn-secondary" id="hero-btn-resume">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-graphic">
+        <div class="cyber-shield-container">
+          <div class="cyber-shield-bg"></div>
+          <div class="cyber-shield">
+            <div class="cyber-shield-inner"></div>
+          </div>
+          <div style="position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+            <img src="profile%20photo.jpeg" alt="NAVACHANDRA.K" class="hero-profile-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>A peek into my background, academic path, and passion for digital security.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Securing the Web, One Request at a Time</h3>
+          <p>
+            I am a Final-Year B.Tech Computer Science and Engineering student at Sree Narayana Guru College of Engineering and Technology, Payyanuri. With hands-on internship experience in web application security testing, I bridge the gap between software development and digital defense.
+          </p>
+          <p>
+            My practical exposure covers the OWASP Top 10 methodology, manual vulnerability assessments, HTTP request/response manipulation via Burp Suite, and secure deployments. I possess a strong analytical mind with a deep interest in penetration testing, threat hunting, and digital forensics operations.
+          </p>
+          <ul class="about-info-list" style="margin-top: 1.5rem;">
+            <li class="about-info-item">
+              <span class="about-info-label">Location:</span>
+              <span class="about-info-value">Calicut, Kerala, India</span>
+            </li>
+            <li class="about-info-item">
+              <span class="about-info-label">Email:</span>
+              <span class="about-info-value">navachandra88@gmail.com</span>
+            </li>
+            <li class="about-info-item">
+              <span class="about-info-label">Education:</span>
+              <span class="about-info-value">B.Tech CSE (2023 - Present)</span>
+            </li>
+            <li class="about-info-item">
+              <span class="about-info-label">Languages:</span>
+              <span class="about-info-value">English, Malayalam, Hindi</span>
+            </li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="glass-panel stat-card">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Industry Certs</span>
+          </div>
+          <div class="glass-panel stat-card">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Labs Solved</span>
+          </div>
+          <div class="glass-panel stat-card">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Internship</span>
+          </div>
+          <div class="glass-panel stat-card">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Open-source Tool</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>Technical Expertise</h2>
+        <p>My core capabilities in cybersecurity, testing protocols, and core tech stacks.</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Category 1 -->
+        <div class="glass-panel skills-category">
+          <h3><i class="fa-solid fa-magnifying-glass-chart"></i> Assessment & Testing</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Vulnerability Assessment</span><span class="skill-level">90%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Web Application Security Testing</span><span class="skill-level">85%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">OWASP Top 10 Analysis</span><span class="skill-level">90%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">HTTP Analysis</span><span class="skill-level">80%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="glass-panel skills-category">
+          <h3><i class="fa-solid fa-screwdriver-wrench"></i> Security Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Burp Suite Professional</span><span class="skill-level">85%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Linux Security Environments</span><span class="skill-level">80%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Git & GitHub Integration</span><span class="skill-level">85%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Network Security Foundations</span><span class="skill-level">75%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2>Experience & Education</h2>
+        <p>My professional growth, academic milestones, and practical credentials.</p>
+      </div>
+      <div class="timeline-section-wrapper">
+        <!-- Experience Column -->
+        <div class="timeline-column">
+          <h3><i class="fa-solid fa-briefcase"></i> Work & Practice</h3>
+          <div class="timeline-container">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-panel timeline-card">
+                <span class="timeline-date">Internship</span>
+                <h4 class="timeline-title">Cyber Security Intern</h4>
+                <div class="timeline-subtitle">Tech Cake</div>
+                <ul>
+                  <li>Supported research on emerging threats, risk mitigation, and industry standard practices.</li>
+                  <li>Coordinated technical assessments and security testing across learning and research platforms.</li>
+                  <li>Conducted vulnerability analysis identifying SQLi, XSS, and authentication weaknesses.</li>
+                  <li>Prepared detailed technical compliance reports and internal knowledge-sharing guides.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-panel timeline-card">
+                <span class="timeline-date">Hands-on Labs</span>
+                <h4 class="timeline-title">Practical Security Experience</h4>
+                <div class="timeline-subtitle">TryHackMe, PortSwigger, OverTheWire</div>
+                <ul>
+                  <li>Completed multiple labs covering path traversals, SQLi, and authentication flaws.</li>
+                  <li>Manipulated and analyzed complex HTTP traffic streams with Burp Suite.</li>
+                  <li>Mastered Linux terminal administration and privilege escalation fundamentals.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="timeline-column">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Academics</h3>
+          <div class="timeline-container">
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-panel timeline-card">
+                <span class="timeline-date">2023 - Present</span>
+                <h4 class="timeline-title">B.Tech Computer Science Engineering</h4>
+                <div class="timeline-subtitle">Sree Narayana Guru College of Engineering and Technology</div>
+                <ul>
+                  <li>Focusing on network architectures, databases, system security, and algorithm designs.</li>
+                  <li>Located in Payyanur, Kerala.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Security Projects</h2>
+        <p>Showcasing functional tools and penetration testing challenges I've developed.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="glass-panel project-card">
+          <div class="project-media">
+            <div class="project-media-code">
+import flask
+app = Flask(__name__)
+@app.route('/scan')
+def scan_site():
+    # reconnaissance
+            </div>
+            <div class="project-media-overlay">
+              <i class="fa-solid fa-magnifying-glass-shield project-media-icon"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag tech-accent">Python</span>
+              <span class="project-tag tech-accent">Flask</span>
+              <span class="project-tag">Git</span>
+              <span class="project-tag">GitHub</span>
+            </div>
+            <h3 class="project-title">Site Checker</h3>
+            <p class="project-desc">
+              A comprehensive website security and analysis tool. Features automated HTTP response inspection, identifying underlying header weaknesses, web framework disclosures, and critical configuration parameters.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" id="proj-link-sitechecker-git"><i class="fa-brands fa-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-panel project-card">
+          <div class="project-media">
+            <div class="project-media-code">
+HTTP/1.1 200 OK
+Content-Type: text/html
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+            </div>
+            <div class="project-media-overlay">
+              <i class="fa-solid fa-terminal project-media-icon"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag tech-accent">Burp Suite</span>
+              <span class="project-tag tech-accent">OWASP</span>
+              <span class="project-tag">PenTesting</span>
+            </div>
+            <h3 class="project-title">Vulnerability Assessments</h3>
+            <p class="project-desc">
+              Conducted regular hands-on security evaluations on active platforms. Audited mechanisms against SQL injection patterns, input filtering bypasses, path traversals, and cryptographic failures.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" id="proj-link-vuln-academy"><i class="fa-solid fa-award"></i> Verification</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <h2>Certifications</h2>
+        <p>Validating my specialized training and security knowledge.</p>
+      </div>
+      <div class="certifications-grid">
+        <!-- Cert 1 -->
+        <div class="glass-panel cert-card">
+          <div class="cert-icon">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Cisco Networking Academy</p>
+          </div>
+        </div>
+        <!-- Cert 2 -->
+        <div class="glass-panel cert-card">
+          <div class="cert-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="cert-info">
+            <h3>SQL Injection Attacks</h3>
+            <p>EC Council</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Let's talk! Reach out for project queries, career opportunities, or security discussions.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <!-- Card 1 -->
+          <div class="glass-panel contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p><a href="mailto:navachandra88@gmail.com">navachandra88@gmail.com</a></p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-panel contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p><a href="tel:+918590658558">+91 85906 58558</a></p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-panel contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Calicut, Kerala, India</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <h4>Connect Online</h4>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" class="social-link" id="contact-github" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="social-link" id="contact-linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-panel contact-form-panel">
+          <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="form-name">Full Name</label>
+              <input type="text" id="form-name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email Address</label>
+              <input type="email" id="form-email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%; justify-content: center;">
+              <i class="fa-solid fa-paper-plane"></i> Send Secure Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="logo">
+        <i class="fa-solid fa-shield-halved logo-icon"></i>
+        <span>NAVACHANDRA</span><span class="dot">.K</span>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="footer-text">&copy; 2026 NAVACHANDRA.K. All rights reserved. Designed for Security.</p>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
